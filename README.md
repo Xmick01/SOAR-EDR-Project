@@ -3,13 +3,13 @@
 
 ## Objective
 
-The SOAR EDR project focuses on creating a practical, automated security workflow using Lima Charlie, Tines, Slack, and email. The goal is to establish a streamlined process for detecting and responding to security threats. This involves setting up Lima Charlie to identify specific threats, such as a hack tool (Lazagne), and utilizing Tines to automate responses. Alerts with detailed information are sent to Slack and email, prompting a decision on whether to isolate a machine. If isolation is approved, it is automatically carried out.
+The SOAR EDR project focuses on creating a practical, automated security workflow using LimaCharlie, Tines, Slack, and email. The goal is to establish a streamlined process for detecting and responding to security threats. This involves setting up LimaCharlie to identify specific threats, such as a hack tool (Lazagne), and utilizing Tines to automate responses. Alerts with detailed information are sent to Slack and email, prompting a decision on whether to isolate a machine. If isolation is approved, it is automatically carried out.
 The project integrates various security tools to enhance the efficiency of the detection and response process. By completion, participants will gain hands-on experience in setting up detection rules, creating automated playbooks, and managing security alerts—key skills for any cybersecurity professional.
 
 
 
 ### Skills Learned
-* **EDR Configuration and Management:** Skills in setting up and managing EDR systems, including the integration and customization of Lima Charlie for endpoint security.
+* **EDR Configuration and Management:** Skills in setting up and managing EDR systems, including the integration and customization of LimaCharlie for endpoint security.
 * **SOAR Automation and Workflow Design:** Proficiency in using SOAR tools like Tines to automate security processes and create effective incident response workflows.
 * **Security Integration and Communication:** Expertise in coordinating various security tools (e.g., Slack, email) for streamlined threat detection and response.
 * **Playbook Development:** Ability to design and implement automated playbooks for efficient incident management and response.
@@ -17,7 +17,8 @@ The project integrates various security tools to enhance the efficiency of the d
 
 ### Tools Used
 
-* **Lima Charlie:** An EDR (Endpoint Detection and Response) tool for detecting malicious activities on endpoints.
+* **[Vultr](https://www.vultr.com):** Cloud provider
+* **LimaCharlie:** An EDR (Endpoint Detection and Response) tool for detecting malicious activities on endpoints.
 * **Tines:** A SOAR (Security Orchestration, Automation, and Response) platform for automating workflows and integrating various security tools.
 * **Slack:** A communication tool for sending alerts and notifications.
 * **Email:** Used for sending alerts and information related to detections and actions.
@@ -37,3 +38,5 @@ The project integrates various security tools to enhance the efficiency of the d
   * A message is sent to Slack (specifically to the #alert channel) indicating that the computer has been successfully isolated.
 
 This workflow ensures that appropriate actions are taken based on the SOC analyst's decision and that relevant parties are notified through Slack.
+
+## Step 2: Set up VM
