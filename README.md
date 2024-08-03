@@ -16,17 +16,24 @@ The project integrates various security tools to enhance the efficiency of the d
 * **Alert Management and Criteria Development:** Understanding of how to create and manage detailed security alerts, and developing criteria for automated machine isolation.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+* **Lima Charlie:** An EDR (Endpoint Detection and Response) tool for detecting malicious activities on endpoints.
+* **Tines:** A SOAR (Security Orchestration, Automation, and Response) platform for automating workflows and integrating various security tools.
+* **Slack:** A communication tool for sending alerts and notifications.
+* **Email:** Used for sending alerts and information related to detections and actions.
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## Step 1: Diagram of Playbook
 
-Every screenshot should have some text explaining what the screenshot is about.
+![SOAR EDR playbook diagram](https://github.com/user-attachments/assets/ec7a5f1d-02f0-48bf-9145-c91e6fe49a09)
+ 
+1. Detection: Lima Charlie detects the presence of a hacker tool on an endpoint.
+2. Notification: Lima Charlie sends a detection alert to Tines. Tines then sends notifications with the relevant details to both Slack and the SOC analyst's email. These details include the time of detection, computer name, source IP, process, command line, file path, sensor ID, and a link to the detection.
+3. User Prompt: The SOC analyst receives the notifications and clicks on a link to access the user prompt provided by Tines. This prompt presents the option to either isolate or not isolate the affected computer.
+4. Action Based on SOC Analyst Decision:
+* If the SOC analyst chooses not to isolate the computer:
+  * A message is sent to Slack (specifically to the #alert channel) indicating that the computer was not isolated and advising to investigate further.
+* If the SOC analyst chooses to isolate the computer:
+  * Lima Charlie automatically isolates the computer.
+  * A message is sent to Slack (specifically to the #alert channel) indicating that the computer has been successfully isolated.
 
-Example below.
-
-*Ref 1: Network Diagram*
+This workflow ensures that appropriate actions are taken based on the SOC analyst's decision and that relevant parties are notified through Slack.
