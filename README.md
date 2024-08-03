@@ -2,18 +2,18 @@
 
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+The SOAR EDR project focuses on creating a practical, automated security workflow using Lima Charlie, Tines, Slack, and email. The goal is to establish a streamlined process for detecting and responding to security threats. This involves setting up Lima Charlie to identify specific threats, such as a hack tool (Lazagne), and utilizing Tines to automate responses. Alerts with detailed information are sent to Slack and email, prompting a decision on whether to isolate a machine. If isolation is approved, it is automatically carried out.
+The project integrates various security tools to enhance the efficiency of the detection and response process. By completion, participants will gain hands-on experience in setting up detection rules, creating automated playbooks, and managing security alerts—key skills for any cybersecurity professional.
+
+
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
-
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+* **EDR Configuration and Management:** Skills in setting up and managing EDR systems, including the integration and customization of Lima Charlie for endpoint security.
+* **SOAR Automation and Workflow Design:** Proficiency in using SOAR tools like Tines to automate security processes and create effective incident response workflows.
+* **Security Integration and Communication:** Expertise in coordinating various security tools (e.g., Slack, email) for streamlined threat detection and response.
+* **Playbook Development:** Ability to design and implement automated playbooks for efficient incident management and response.
+* **Alert Management and Criteria Development:** Understanding of how to create and manage detailed security alerts, and developing criteria for automated machine isolation.
 
 ### Tools Used
 [Bullet Points - Remove this afterwards]
