@@ -18,8 +18,8 @@ The project integrates various security tools to enhance the efficiency of the d
 ### Tools Used
 
 * **[Vultr](https://www.vultr.com):** Cloud provider
-* **LimaCharlie:** An EDR (Endpoint Detection and Response) tool for detecting malicious activities on endpoints.
-* **Tines:** A SOAR (Security Orchestration, Automation, and Response) platform for automating workflows and integrating various security tools.
+* **[LimaCharlie](https://limacharlie.io/):** An EDR (Endpoint Detection and Response) tool for detecting malicious activities on endpoints.
+* **[Tines](https://www.tines.com/):** A SOAR (Security Orchestration, Automation, and Response) platform for automating workflows and integrating various security tools.
 * **Slack:** A communication tool for sending alerts and notifications.
 * **Email:** Used for sending alerts and information related to detections and actions.
 
