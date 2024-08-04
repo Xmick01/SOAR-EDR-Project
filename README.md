@@ -91,6 +91,34 @@ This workflow ensures that appropriate actions are taken based on the SOC analys
 
 ![event rules test](https://github.com/user-attachments/assets/5f7324c8-f1aa-44e1-a1a8-0866ccf37f5d)
 
+* Run Lazagne again and LimaCharile should capture it.
 
+![detections](https://github.com/user-attachments/assets/d4a34757-c7cf-449b-93e8-8ca37cb443ed)
 
+## Step 4: Setup Slack and Tines and Test Connection between Tines and LimaCharlie 
+
+* Set up an account on [Slack](https://slack.com/)
+
+![sign up for slack](https://github.com/user-attachments/assets/15b4d34b-4c9f-496c-9871-6de75ecfe275)
+
+* Create a channel for alerts. SOC Analysts tend to have a dedicated channel for alerts.
+![create dedicated alerts channel in slack](https://github.com/user-attachments/assets/af12e7d3-0824-46ac-885c-259d2272b167)
+
+* Set up an account on [Tines](https://www.tines.com/) and add a webhook. Copy the webhook url and go to LimaCharlie. Go to outputs and select Tines and paste the url.
+
+![output tines limacharlie webhook](https://github.com/user-attachments/assets/230f2da2-750d-47a1-b6fb-c7fd9bbf83d4)
+
+* If everything works correctly, Tines should have the correct output alert.
+
+## Step 5: Send a Message to Email and Slack and Generate a User Prompt
+
+* Integrate Slack into Tines. Slack is compatible with Tines because Tines is a SOAR and SOARs tend to integrate with messaging apps like Slack easily.
+
+![slack tines](https://github.com/user-attachments/assets/aaddb801-8a55-4825-ba73-c1fc4f4be1b2)
+
+* Add the channel id to Tines in order to have the alert sent to the dedicated alert channel.
+
+![slack alert channel id](https://github.com/user-attachments/assets/b5ec94c8-9b0d-4573-83e5-b7bf155ce44e)
+
+![slack alert channel id 2](https://github.com/user-attachments/assets/01e31be0-a24d-422c-a17d-73960bbc8599)
 
