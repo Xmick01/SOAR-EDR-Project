@@ -160,3 +160,16 @@ This workflow ensures that appropriate actions are taken based on the SOC analys
 
 ![limacharlie api](https://github.com/user-attachments/assets/36215846-fd4f-4ca6-8561-8765077e396c)
 
+* When a computer is isolated, it is essentially cut off from the rest of the network to prevent the spread of any malicious activity or further compromise. Here are the typical outcomes and actions taken on an isolated computer:
+
+1. Network Disconnection: The computer's network connectivity is severed, blocking both inbound and outbound communication. This means the computer can no longer communicate with other devices on the network or access the internet.
+2. Containment: The isolation helps contain any potential threats, preventing malware or attackers from spreading to other systems within the network.
+3. Investigation: The SOC team can safely investigate the isolated computer to identify the nature of the threat. This often involves forensic analysis, reviewing logs, and identifying malicious files or processes.
+4. Remediation: The isolation provides an opportunity to remediate the issue without risking further network compromise. This may include removing malware, patching vulnerabilities, and ensuring no backdoors are left behind.
+5. Monitoring: While isolated, the computer can still be monitored for any unusual activity or signs of compromise that might indicate additional remediation steps are necessary.
+6.  Recovery: Once the threat is neutralized, and the computer is deemed safe, it can be reconnected to the network, ensuring it is fully patched and secure.
+
+ Isolating a computer is a critical step in incident response to minimize damage and maintain the security of the broader network.
+
+![soar](https://github.com/user-attachments/assets/55497c49-65e3-4662-b6ad-54c83763f077)
+
