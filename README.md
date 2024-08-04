@@ -122,3 +122,15 @@ This workflow ensures that appropriate actions are taken based on the SOC analys
 
 ![slack alert channel id 2](https://github.com/user-attachments/assets/01e31be0-a24d-422c-a17d-73960bbc8599)
 
+* Add the relevant fields to the message in order to get comprehensive alerts.
+
+![Alert info](https://github.com/user-attachments/assets/59ffc85f-545a-4d70-b818-2c01e4e68f37)
+
+- Time: Establishes when the event occurred, aiding in timeline reconstruction.
+- Username: Identifies the account involved, indicating potential user-specific threats.
+- Source IP: Locates the origin of the activity, which is crucial for identifying the attack's origin.
+- Process: Details the specific process involved, helping in understanding the nature of the threat.
+- Command Line: Reveals the exact commands executed, which can indicate malicious intent.
+- File Path: Pinpoints the location of the executable, assisting in identifying unauthorized files.
+- Sensor ID: Identifies the specific sensor that detected the threat, helping in tracing and validating the detection.
+- Link to Detection: Provides direct access to detailed detection logs and reports for further analysis and response actions.
