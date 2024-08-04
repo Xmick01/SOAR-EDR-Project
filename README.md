@@ -134,3 +134,29 @@ This workflow ensures that appropriate actions are taken based on the SOC analys
 - File Path: Pinpoints the location of the executable, assisting in identifying unauthorized files.
 - Sensor ID: Identifies the specific sensor that detected the threat, helping in tracing and validating the detection.
 - Link to Detection: Provides direct access to detailed detection logs and reports for further analysis and response actions.
+
+* These fields are the same for Slack, email, and User Prompt.
+
+
+![slack alert tines test event info](https://github.com/user-attachments/assets/ed1492a0-4991-4e9d-88a2-9185e0f2eac5)
+
+![Tines email ](https://github.com/user-attachments/assets/ed779dc1-a13e-44e1-8ffe-7553abd2084b)
+
+![user prompt event info](https://github.com/user-attachments/assets/49fff851-a60f-442d-9388-067daa525c3b)
+
+* For the User Prompt, make sure to include a Boolean since there is a true/false logic behind the triggers. If answered no, then the computer will not be isolated. If yes, then the computer will be isolated and LimaCharlie will assist with it.
+
+![yes no trigger](https://github.com/user-attachments/assets/d623c945-fc9a-4112-bc63-a65b494fb303)
+
+* Here is the alert on Slack when the computer is not isolated.
+
+ ![slack not isolated message](https://github.com/user-attachments/assets/61211d8b-71d5-4648-a600-9a4711802ea5)
+
+* Here is the alert on Slack when the computer is isolated.
+
+  ![slack alert isolated ](https://github.com/user-attachments/assets/13c6ca99-5199-40b7-8027-e70619676a9b)
+
+* In order to make sure LimaCharlie does isolate the computer, it has to be integrated into Tines. In order to do that, the API key for LimaCharlie is needed.
+
+![limacharlie api](https://github.com/user-attachments/assets/36215846-fd4f-4ca6-8561-8765077e396c)
+
